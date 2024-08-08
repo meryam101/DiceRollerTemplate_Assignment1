@@ -1,7 +1,7 @@
 from pyscript import document  # webpage module links
 # your roll_dice function should be saved in a file named 'dice.py'
 # uncomment the next line when you have this prepared
-# import dice
+import dice
 
 
 # GLOBAL (script-wide) variable
@@ -18,6 +18,7 @@ def roll_all_dice(event):
     global dice_type  # use global var named dice_type
     ...  # replace with your own code
 
+    print(dice.roll_dice(2))
 
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
