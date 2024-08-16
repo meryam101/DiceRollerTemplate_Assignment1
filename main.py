@@ -20,6 +20,7 @@ def roll_all_dice(event):
 
     print(dice.roll_dice(2))
 
+
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
     document.querySelector("div#roll-history").innerHTML = ""
