@@ -40,6 +40,12 @@ button:hover {
 }
 
 p{
-  color: dodgerblue;
+  color: purple;
   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#roll-history {
+  background-color: lightseagreen;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 35px;
 }
