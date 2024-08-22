@@ -29,27 +29,25 @@
         <!-- Start of your code -->
 
         <h1>Dice Roller Game</h1>
-        <form.one action="">
-          <label for="dice.type">Choose a dice type:</label>
-          <select name="dice.type" id="dice.type">
-            <option value="Coin">Coin</option>
-            <option value="Four">D4</option>
-            <option value="Six">D6</option>
-            <option value="Ten">D10</option>
-            <option value="Twelve">D12</option>
+          <label for="dice_type">Choose a dice type:</label>
+          <select name="dice_type" id="dice_type" py-change="select_face_option">
+            <option value="2">Coin</option>
+            <option value="4">D4</option>
+            <option value="6">D6</option>
+              <option value="8">D8</option>
+            <option value="10">D10</option>
+            <option value="20">D20</option>
+              <option value="100">D100</option>
           </select>
           <br><br>
-        </form.one>
 
-        <form.two action="/action_page.php">
           <label for="rolls">Rolls (between 1 and 100):</label>
           <input type="number" id="rolls" name="rolls" min="1" max="100">
-        </form.two>
 
+        <button type="button" py-click="roll_all_dice">Submit !</button>
+        <button type="button" py-click="clear_history">Clear !</button>
 
-        <button type="button" py-click="roll_all_dice">Click Me!</button>
-
-
+        <div id = "roll-history"></div>
 
 
 
