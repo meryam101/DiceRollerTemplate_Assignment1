@@ -7,7 +7,7 @@ import dice
 # GLOBAL (script-wide) variable
 # this stores the selected face option from the drop-down list
 dice_type = "2"
-number_of_dice = 0
+
 
 def select_face_option(event):
     global dice_type  # use global var named dice_type
